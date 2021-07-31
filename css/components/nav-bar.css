@@ -1,0 +1,42 @@
+.nav {
+  background-color: #f9f9fa;
+  padding: 20px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__btn {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.nav__link {
+  color: #3c434a;
+}
+
+.nav__notification {
+  position: absolute;
+  left: 65px;
+  bottom: 15px;
+}
+
+.nav__dot {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 80px;
+}
