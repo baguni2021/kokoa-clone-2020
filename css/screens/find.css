@@ -95,7 +95,7 @@
   border-radius: 10px;
 }
 
-.open-post__column:last-child i {
+.open-post__column:last-child .open-post__heart-count {
   display: block;
   padding: 5px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -105,4 +105,28 @@
   right: 10px;
   bottom: 10px;
   font-size: 12px;
+}
+
+.open-post__heart-count span {
+  margin-left: 3px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 2s linear infinite;
 }
