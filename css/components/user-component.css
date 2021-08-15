@@ -1,3 +1,7 @@
+.user-component {
+  margin-top: 20px;
+}
+
 .user-component,
 .user-component__colomn:first-child {
   display: flex;
